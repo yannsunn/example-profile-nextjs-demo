@@ -464,7 +464,7 @@ export default function Home() {
               >
                 <Image
                   src={`/${photo}`}
-                  alt={`イベント風景 ${index + 1}`}
+                  alt={`Example Event ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
