@@ -154,7 +154,7 @@ export default function Home() {
                 >
                   <Image
                     src="/kota-profile.jpg"
-                    alt="丸山康太"
+                    alt="田中太郎"
                     fill
                     className="object-cover"
                     priority
@@ -208,13 +208,13 @@ export default function Home() {
                 {...fadeInUp}
                 transition={{ delay: 0.1 }}
               >
-                丸山康太
+                田中太郎
                 <motion.span 
                   className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-2 opacity-90"
                   {...fadeInUp}
                   transition={{ delay: 0.2 }}
                 >
-                  (まるやまこうた)
+                  (たなか たろう)
                 </motion.span>
               </motion.h1>
               
@@ -227,15 +227,15 @@ export default function Home() {
                   イベント × マーケティング事業
                 </p>
                 <p className="text-base sm:text-lg md:text-xl opacity-90">
-                  株式会社Wolf CEO
+                  株式会社Example CEO
                 </p>
                 <p className="text-sm sm:text-base md:text-lg opacity-80 max-w-lg">
-                  元警察特殊部隊から起業家へ。<br className="sm:hidden" />
-                  累計100本以上のイベント実績、<br className="sm:hidden" />
-                  総フォロワー3,000万規模にリーチ。
+                  テクノロジー業界から起業家へ。<br className="sm:hidden" />
+                  累計50本以上のイベント実績、<br className="sm:hidden" />
+                  総フォロワー1,000万規模にリーチ。
                 </p>
                 <p className="text-xs sm:text-sm md:text-base opacity-70">
-                  口癖は「伸び代」
+                  口癖は「Example First」
                 </p>
               </motion.div>
 
@@ -294,7 +294,7 @@ export default function Home() {
               <div className="relative w-full max-w-md mx-auto">
                 <Image
                   src="/kota-about.jpg"
-                  alt="丸山康太"
+                  alt="田中太郎"
                   width={400}
                   height={500}
                   className="rounded-2xl shadow-2xl object-cover"
@@ -304,24 +304,24 @@ export default function Home() {
             
             <motion.div {...fadeInRight} className="space-y-6">
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                神奈川県出身、東京・新宿在住。1999年生まれ、25歳。
+                大阪府出身、東京・渋谷在住。1995年生まれ、29歳。
               </p>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                元警察特殊部隊（18～22歳）を経て、<br className="sm:hidden" />
-                (株)Neptuneにて営業部長として、<br className="sm:hidden" />
-                SNSマーケ・映像スクールの商材販売を担当。
+                大手IT企業（22～26歳）でエンジニアとして経験を積み、<br className="sm:hidden" />
+                その後スタートアップ企業でプロダクトマネージャーとして、<br className="sm:hidden" />
+                デジタルマーケティング・アプリ開発を担当。
               </p>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                2024年11月に独立・起業し、<br className="sm:hidden" />
-                株式会社Wolf CEOとして、<br className="sm:hidden" />
-                BPO事業（Sales/SNS/建築）、<br className="md:hidden" />
-                イベントプロデュース、SaaS事業を主軸に活動中。
+                2023年に独立・起業し、<br className="sm:hidden" />
+                株式会社Example CEOとして、<br className="sm:hidden" />
+                Webサービス開発、<br className="md:hidden" />
+                イベントプロデュース、コンサルティング事業を主軸に活動中。
               </p>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Event Organizer：<br className="sm:hidden" />
-                6.8東京タワー開催、<br className="md:hidden" />
-                30Mフォロワー連携、<br className="md:hidden" />
-                1ヶ月で100名集客を達成。
+                Example Tech Meetup主催、<br className="md:hidden" />
+                コミュニティ総フォロワー10万人規模、<br className="md:hidden" />
+                月次イベントで平均80名集客を実現。
               </p>
             </motion.div>
           </div>
@@ -341,21 +341,21 @@ export default function Home() {
           <motion.div className="space-y-8" variants={stagger} initial="initial" whileInView="animate" viewport={{ once: true }}>
             {[
               {
-                period: '2024年11月 - 現在',
-                title: '株式会社Wolf CEO',
-                description: '独立・起業。BPO事業（Sales/SNS/建築）、イベントプロデュース、SaaS事業を展開',
+                period: '2023年 - 現在',
+                title: '株式会社Example CEO',
+                description: '独立・起業。Webサービス開発、イベントプロデュース、コンサルティング事業を展開',
                 icon: <Briefcase className="text-blue-600" size={24} />
               },
               {
-                period: '2022年 - 2024年',
-                title: '(株)Neptune 営業部長',
-                description: 'SNSマーケ・映像スクールの商材販売を担当',
+                period: '2019年 - 2023年',
+                title: 'Example Startup プロダクトマネージャー',
+                description: 'デジタルマーケティング・アプリ開発プロジェクトを統括',
                 icon: <Trophy className="text-purple-600" size={24} />
               },
               {
-                period: '2018年 - 2022年',
-                title: '元警察 特殊部隊',
-                description: '18～22歳の4年間、特殊部隊として勤務',
+                period: '2017年 - 2019年',
+                title: 'Example Tech ソフトウェアエンジニア',
+                description: '大手IT企業でフルスタック開発エンジニアとして4年間勤務',
                 icon: <Calendar className="text-green-600" size={24} />
               }
             ].map((item, index) => (
@@ -397,18 +397,18 @@ export default function Home() {
           >
             {[
               {
-                title: '① BPO事業',
-                description: 'Sales、SNS、建築の3分野でBPOサービスを提供。クライアント企業の業務効率化と成長支援を実現。',
+                title: '① Webサービス開発',
+                description: 'フルスタック開発、UI/UX設計、モバイルアプリ開発の3分野でサービスを提供。スタートアップから大企業まで幅広いクライアントの事業成長を支援。',
                 gradient: 'from-orange-400 to-red-500'
               },
               {
-                title: '② イベントプロデュース',
-                description: 'Event Organizer：6.8東京タワー開催。30Mフォロワー連携、1ヶ月で100名集客。インフルエンサー×経営者の交流機会を創出。累計100本以上のイベント実績。',
+                title: '② Example Event プロデュース',
+                description: 'Tech Meetup主催：Example Innovation Center開催。コミュニティ総フォロワー10万人、月次80名集客。エンジニア×起業家の交流機会を創出。累計50本以上のイベント実績。',
                 gradient: 'from-purple-400 to-pink-500'
               },
               {
-                title: '③ 飲食マーケティング・コンサル',
-                description: '飲食店の「0→1」立ち上げから、「1→100」の売上最大化までを支援。自身の4,000名規模の人脈リストを活用したリアル集客。',
+                title: '③ デジタル変革コンサルティング',
+                description: 'スタートアップの「0→1」プロダクト開発から、「1→100」のスケール支援まで。自身の技術コミュニティ2,000名を活用したデジタル人材紹介。',
                 gradient: 'from-blue-400 to-cyan-500'
               }
             ].map((business, index) => (
