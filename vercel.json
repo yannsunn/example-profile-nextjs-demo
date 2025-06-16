@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "name": "kota-profile-nextjs",
+  "name": "example-profile",
+  "alias": ["awakeinc.co.jp"],
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
