@@ -39,7 +39,7 @@ npm start
 
 ## デプロイ
 
-このアプリケーションは awakeinc.co.jp のサブドメインでホストされています。
+このアプリケーションは profile-example.awakeinc.co.jp でホストされています。
 
 ## ライセンス
 

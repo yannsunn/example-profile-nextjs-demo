@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   keywords: "田中太郎, Example, CEO, Webサービス開発, イベントプロデュース, コンサルティング, プロフィール",
   authors: [{ name: "田中太郎" }],
   creator: "田中太郎",
-  metadataBase: new URL("https://awakeinc.co.jp"),
+  metadataBase: new URL("https://profile-example.awakeinc.co.jp"),
   openGraph: {
     title: "田中太郎 - Example Portfolio",
     description: "株式会社Example CEO - Webサービス開発、イベントプロデュース、コンサルティング事業",
-    url: "https://awakeinc.co.jp",
+    url: "https://profile-example.awakeinc.co.jp",
     siteName: "田中太郎 Portfolio",
     type: "website",
   },

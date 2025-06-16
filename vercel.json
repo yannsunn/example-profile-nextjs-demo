@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "example-profile",
-  "alias": ["awakeinc.co.jp"],
+  "alias": ["profile-example.awakeinc.co.jp"],
   "builds": [
     {
       "src": "package.json",
