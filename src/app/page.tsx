@@ -566,31 +566,27 @@ export default function Home() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <motion.a 
-              href="https://www.instagram.com/marukou0722/"
-              target="_blank"
-              className="flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/30 transition-all duration-300 group"
+            <motion.div 
+              className="flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm p-6 rounded-2xl transition-all duration-300 group"
               variants={fadeInUp}
             >
-              <Instagram className="text-white group-hover:scale-110 transition-transform duration-300" size={24} />
+              <Briefcase className="text-white group-hover:scale-110 transition-transform duration-300" size={24} />
               <div className="text-left">
-                <p className="text-white font-semibold">Instagram</p>
-                <p className="text-white/80 text-sm">@marukou0722</p>
+                <p className="text-white font-semibold">Email</p>
+                <p className="text-white/80 text-sm">Contact us</p>
               </div>
-            </motion.a>
+            </motion.div>
             
-            <motion.a 
-              href="https://maps.app.goo.gl/wx3xBtgNCd27grwz9?g_st=ic"
-              target="_blank"
-              className="flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/30 transition-all duration-300 group"
+            <motion.div 
+              className="flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm p-6 rounded-2xl transition-all duration-300 group"
               variants={fadeInUp}
             >
-              <MapPin className="text-white group-hover:scale-110 transition-transform duration-300" size={24} />
+              <Calendar className="text-white group-hover:scale-110 transition-transform duration-300" size={24} />
               <div className="text-left">
-                <p className="text-white font-semibold">おばんざいさくら</p>
-                <p className="text-white/80 text-sm">店舗にて直接ご相談</p>
+                <p className="text-white font-semibold">Schedule</p>
+                <p className="text-white/80 text-sm">Book a Meeting</p>
               </div>
-            </motion.a>
+            </motion.div>
           </motion.div>
         </div>
       </section>
