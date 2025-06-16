@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Instagram, MapPin, ExternalLink, Calendar, Briefcase, Heart, Trophy } from 'lucide-react';
+import { ExternalLink, Calendar, Briefcase, Heart, Trophy } from 'lucide-react';
 import Image from 'next/image';
 
 // 写真データ
@@ -244,28 +244,20 @@ export default function Home() {
                 {...fadeInUp}
                 transition={{ delay: 0.5 }}
               >
-                <a 
-                  href="https://www.instagram.com/marukou0722/" 
-                  target="_blank"
-                  className="group flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl hover:bg-white/20 transition-all duration-300 border border-white/20"
-                >
-                  <Instagram size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                <div className="group flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl border border-white/20">
+                  <Briefcase size={20} className="group-hover:scale-110 transition-transform duration-300" />
                   <div className="text-left">
-                    <p className="font-semibold text-sm">Instagram</p>
-                    <p className="text-xs opacity-80">@marukou0722</p>
+                    <p className="font-semibold text-sm">Portfolio</p>
+                    <p className="text-xs opacity-80">View Work</p>
                   </div>
-                </a>
-                <a 
-                  href="https://maps.app.goo.gl/wx3xBtgNCd27grwz9?g_st=ic" 
-                  target="_blank"
-                  className="group flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl hover:bg-white/20 transition-all duration-300 border border-white/20"
-                >
-                  <MapPin size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div className="group flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl border border-white/20">
+                  <Heart size={20} className="group-hover:scale-110 transition-transform duration-300" />
                   <div className="text-left">
-                    <p className="font-semibold text-sm">Store</p>
-                    <p className="text-xs opacity-80">おばんざいさくら</p>
+                    <p className="font-semibold text-sm">Contact</p>
+                    <p className="text-xs opacity-80">Get in Touch</p>
                   </div>
-                </a>
+                </div>
               </motion.div>
             </motion.div>
           </div>
@@ -525,14 +517,14 @@ export default function Home() {
                   <div className="space-y-2">
                     <p className="flex items-center gap-2 text-gray-600">
                       <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                      おばんざいさくら 副代表
+                      フリーランス開発者
                     </p>
                   </div>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-700 mb-3">趣味</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['筋トレ', 'MMA', 'サウナ', 'ダイビング', 'サバゲー', '格闘技', 'イベント企画', '散歩'].map((hobby, index) => (
+                    {['プログラミング', 'ロードバイク', 'カメラ', 'コーヒー', 'ボードゲーム', 'ハイキング', 'イベント企画', '読書'].map((hobby, index) => (
                       <span 
                         key={index}
                         className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-medium"
@@ -603,95 +595,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-800"
-            {...fadeInUp}
-          >
-            アクセス
-          </motion.h2>
-          
-          <motion.div 
-            className="text-center mb-12 space-y-4"
-            {...fadeInUp}
-            transition={{ delay: 0.2 }}
-          >
-            <h3 className="text-2xl font-bold text-gray-800">おばんざいさくら</h3>
-            <div className="space-y-2 text-gray-600">
-              <p className="break-all sm:break-normal">〒160-0022<br className="sm:hidden" /> 東京都新宿区新宿３丁目８−２<br className="sm:hidden" /> クロスビル B1階</p>
-              <p>TEL: <a href="tel:0359258182" className="text-blue-600 hover:underline">03-5925-8182</a></p>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
-            {...fadeInUp}
-            transition={{ delay: 0.3 }}
-          >
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.557028838397!2d139.70190681525644!3d35.687900080192264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd5d6b6aa8d%3A0x6c63d989f4d8a4a2!2z44CSMTY2LTAwMjIg5p2x5Lqs6YO95paw5a6_5Yy65paw5a6_77yT5LiB55uu77yY4oiS77ySIOOCr-ODreOCueODk-ODqyBCMQ!5e0!3m2!1sja!2sjp!4v1639999999999!5m2!1sja!2sjp"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="absolute inset-0"
-              title="おばんざいさくら地図"
-            ></iframe>
-          </motion.div>
-
-          <motion.div 
-            className="mt-8 grid md:grid-cols-2 gap-6 max-w-2xl mx-auto"
-            {...fadeInUp}
-            transition={{ delay: 0.4 }}
-          >
-            <div className="bg-gray-50 p-6 rounded-2xl">
-              <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Calendar size={20} className="text-blue-600" />
-                営業時間
-              </h4>
-              <div className="space-y-2 text-gray-600">
-                <p>月〜土: 17:00〜24:00</p>
-                <p>日・祝: 定休日</p>
-              </div>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-2xl">
-              <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Briefcase size={20} className="text-blue-600" />
-                アクセス
-              </h4>
-              <div className="space-y-2 text-gray-600">
-                <p>JR新宿駅 東口・南口 徒歩3分</p>
-                <p>新宿三丁目駅 徒歩1分</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="mt-6 text-center"
-            {...fadeInUp}
-            transition={{ delay: 0.5 }}
-          >
-            <a 
-              href="https://maps.app.goo.gl/wx3xBtgNCd27grwz9?g_st=ic"
-              target="_blank"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-300 group"
-            >
-              <MapPin size={20} className="group-hover:scale-110 transition-transform duration-300" />
-              <span>Google マップで開く</span>
-            </a>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-center">
         <p className="text-gray-400">
-          &copy; 2024 丸山康太. All rights reserved.
+          &copy; 2024 田中太郎. All rights reserved.
         </p>
       </footer>
     </div>
