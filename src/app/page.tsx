@@ -20,31 +20,31 @@ const photos = [
   'S__8241402.jpg'
 ];
 
-// 実績データ
+// イベント実績データ（Example用）
 const achievements = [
   {
-    title: '最新インフルエンサーコラボイベント',
-    link: 'https://www.instagram.com/p/DKY-vciTQ9f/?img_index=1'
+    title: 'Example Tech Conference 2024',
+    link: '#'
   },
   {
-    title: 'インフルエンサー×経営者集客イベント',
-    link: 'https://www.instagram.com/p/DIYCEyqTOb3/?igsh=MXYwdTM5OW1nemh4Nw=='
+    title: 'Example Business Networking Event',
+    link: '#'
   },
   {
-    title: '同い年会',
-    link: 'https://www.instagram.com/p/DJz6MoMT2MT/?igsh=MTNtcmlpNmZ4MnpjZg=='
+    title: 'Example Creative Workshop',
+    link: '#'
   },
   {
-    title: 'スポーツイベント 1',
-    link: 'https://www.instagram.com/p/C67uwGPSxbP/?igsh=MTloZW83Njd1cWxibA=='
+    title: 'Example Sports Tournament',
+    link: '#'
   },
   {
-    title: 'スポーツイベント 2',
-    link: 'https://www.instagram.com/p/C9b3i7WyIA3/?igsh=MmFpZmM4bGFhZnRt'
+    title: 'Example Charity Fundraiser',
+    link: '#'
   },
   {
-    title: 'サバゲーイベント',
-    link: 'https://www.instagram.com/p/C2j7RsPyZIH/?igsh=d3h5aXJsZXYwbWZ3'
+    title: 'Example Innovation Summit',
+    link: '#'
   }
 ];
 
